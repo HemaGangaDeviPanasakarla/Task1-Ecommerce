@@ -30,6 +30,7 @@ function Header() {
         <span className="nav-item" onClick={() => handleNavigation("homeSection")}>
           Home
         </span>
+        
         <span className="nav-item" onClick={() => handleNavigation("productSection")}>
           Products
         </span>
