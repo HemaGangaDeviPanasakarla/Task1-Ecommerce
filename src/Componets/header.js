@@ -37,7 +37,7 @@ function Header() {
         <span className="nav-item cart-icon">
           <FontAwesomeIcon icon={faShoppingCart} />
           <span id="cartCount" className="cart-count">
-            0
+           0
           </span>
         </span>
       </div>

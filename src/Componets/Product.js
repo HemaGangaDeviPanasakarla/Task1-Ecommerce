@@ -1,6 +1,8 @@
 import "./Product.css"
 
 function Products() {
+
+
   const products = [
     { id: 1, image: "/images/111.jpg", title: "Gulab Jamm", price: "From ₹299" },
     { id: 2, image: "/images/12.jpg", title: "Jalebi", price: "From ₹199" },
@@ -16,20 +18,19 @@ function Products() {
     { id: 12, image: "/images/1956.webp", title: "Kajjikayalu", price: " From ₹590" },
   ]
 
+  
+
   const addToCart = (product) => {
-    // Show alert message
+
     alert(`${product.title} added to cart!`)
-
-    // Get current cart count from localStorage or default to 0
     let cartCount = Number.parseInt(localStorage.getItem("cartCount") || "0")
-
-    // Increment cart count
     cartCount++
 
-    // Save updated cart count to localStorage
+    
+
+   
     localStorage.setItem("cartCount", cartCount.toString())
 
-    // Update cart count display in the header
     const cartCountElement = document.getElementById("cartCount")
     if (cartCountElement) {
       cartCountElement.textContent = cartCount.toString()
